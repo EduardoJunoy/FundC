@@ -1,4 +1,4 @@
-# PROG1
+# FundC
 
 **Curso: 2021/2022**
 
