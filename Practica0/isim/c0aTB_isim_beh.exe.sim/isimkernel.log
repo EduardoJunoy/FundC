@@ -1,0 +1,30 @@
+Command line:
+   c0aTB_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  56936
+
+Sat Sep 25 13:27:51 2021
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 5150.41 Meg
+
+ Total Signals          : 76
+ Total Nets             : 54
+ Total Signal Drivers   : 21
+ Total Blocks           : 16
+ Total Primitive Blocks : 14
+ Total Processes        : 19
+ Total Traceable Variables  : 35
+ Total Scalar Nets and Variables : 637
+Total Line Count : 47
+Total Line Count : 47
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 4993.12 Meg
+
+Sat Sep 25 13:29:34 2021
+

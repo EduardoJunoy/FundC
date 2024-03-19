@@ -1,0 +1,71 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : p1ej1b.vf
+// /___/   /\     Timestamp : 09/23/2021 23:18:53
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/eduar/Desktop/UAM/PF/Practica1/p1ej1b.vf -w C:/Users/eduar/Desktop/UAM/PF/Practica1/p1ej1b.sch
+//Design Name: p1ej1b
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module p1ej1b(A, 
+              B, 
+              C, 
+              D, 
+              Z);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output Z;
+   
+   wire XLXN_6;
+   wire XLXN_20;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_38;
+   wire XLXN_39;
+   
+   NAND3  XLXI_1 (.I0(D), 
+                 .I1(B), 
+                 .I2(A), 
+                 .O(XLXN_22));
+   NAND3  XLXI_2 (.I0(XLXN_39), 
+                 .I1(XLXN_38), 
+                 .I2(XLXN_6), 
+                 .O(XLXN_21));
+   NAND3  XLXI_3 (.I0(D), 
+                 .I1(XLXN_39), 
+                 .I2(XLXN_20), 
+                 .O(XLXN_23));
+   NAND3  XLXI_4 (.I0(XLXN_23), 
+                 .I1(XLXN_21), 
+                 .I2(XLXN_22), 
+                 .O(Z));
+   NAND2  XLXI_5 (.I0(C), 
+                 .I1(C), 
+                 .O(XLXN_6));
+   NAND2  XLXI_6 (.I0(D), 
+                 .I1(D), 
+                 .O(XLXN_38));
+   NAND2  XLXI_7 (.I0(B), 
+                 .I1(B), 
+                 .O(XLXN_39));
+   NAND2  XLXI_8 (.I0(A), 
+                 .I1(A), 
+                 .O(XLXN_20));
+endmodule

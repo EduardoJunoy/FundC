@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Practica3.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
+    <file xil_pn:fileType="FILE_VERILOG" xil_pn:name="p3ej1.vf">
+      <branch xil_pn:name="Implementation"/>
+      <branch xil_pn:name="BehavioralSim"/>
+    </file>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="p3ej1_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="p3ej1_tb_isim_beh.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="p3ej1_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_VERILOG" xil_pn:name="p3ej2.vf"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="p3ej2_tb_stx_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1637090146" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1637090146">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637100336" xil_pn:in_ck="-2811503762056639169" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1637100336">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Testbenches/p3ej1_tb.vhd"/>
+      <outfile xil_pn:name="Testbenches/p3ej2_tb.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1637100342" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-780123039465148033" xil_pn:start_ts="1637100342">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637101108" xil_pn:in_ck="5331258967443154672" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="2780015326580254519" xil_pn:start_ts="1637101105">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="p3ej1.vf"/>
+      <outfile xil_pn:name="p3ej2.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090151" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-2882491432637817622" xil_pn:start_ts="1637090151">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637101108" xil_pn:in_ck="3452957996483693562" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1637101108">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="Testbenches/p3ej1_tb.vhd"/>
+      <outfile xil_pn:name="Testbenches/p3ej2_tb.vhd"/>
+      <outfile xil_pn:name="p3ej1.vf"/>
+      <outfile xil_pn:name="p3ej2.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1637101109" xil_pn:in_ck="3452957996483693562" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="6833056890319081419" xil_pn:start_ts="1637101108">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090155" xil_pn:in_ck="5385612176738583271" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-3982640932148331668" xil_pn:start_ts="1637090155">
+      <status xil_pn:value="AbortedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForced"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="p3ej1_tb_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090837" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1637090837">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090846" xil_pn:in_ck="159825952343183" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="5099759357221642091" xil_pn:start_ts="1637090844">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="p3ej1.vf"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090839" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-2882491432637817622" xil_pn:start_ts="1637090839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090839" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1637090839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1637090839" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-6445655382349178957" xil_pn:start_ts="1637090839">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
+
+</generated_project>

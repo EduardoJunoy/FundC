@@ -1,0 +1,92 @@
+ISim log file
+Running: C:\Users\eduar\OneDrive\Escritorio\UAM\PF\controlobras\p4ej1_tb_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/eduar/OneDrive/Escritorio/UAM/PF/controlobras/p4ej1_tb_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: VOLCADO DE UNIDAD DE CONTROL EN .HEX... (/p4ej1_tb/).
+Finished circuit initialization process.
+at 10 ns: Note: @0: 12 0Ch sum 28 (/p4ej1_tb/).
+at 20 ns: Note: @1: 12 0Ch sum 40 (/p4ej1_tb/).
+at 30 ns: Note: @2: 44 2Ch sum 84 (/p4ej1_tb/).
+at 40 ns: Note: @3: 44 2Ch sum 128 (/p4ej1_tb/).
+at 50 ns: Note: @4: 76 4Ch sum 204 (/p4ej1_tb/).
+at 60 ns: Note: @5: 76 4Ch sum 280 (/p4ej1_tb/).
+at 70 ns: Note: @6: 76 4Ch sum 356 (/p4ej1_tb/).
+at 80 ns: Note: @7: 76 4Ch sum 432 (/p4ej1_tb/).
+at 90 ns: Note: @8: 108 6Ch sum 540 (/p4ej1_tb/).
+at 100 ns: Note: @9: 108 6Ch sum 648 (/p4ej1_tb/).
+at 110 ns: Note: @10: 108 6Ch sum 756 (/p4ej1_tb/).
+at 120 ns: Note: @11: 108 6Ch sum 864 (/p4ej1_tb/).
+at 130 ns: Note: @12: 148 94h sum 1012 (/p4ej1_tb/).
+at 140 ns: Note: @13: 148 94h sum 1160 (/p4ej1_tb/).
+at 150 ns: Note: @14: 148 94h sum 1308 (/p4ej1_tb/).
+at 160 ns: Note: @15: 148 94h sum 1456 (/p4ej1_tb/).
+at 170 ns: Note: @16: 129 81h sum 1585 (/p4ej1_tb/).
+at 180 ns: Note: @17: 161 A1h sum 1746 (/p4ej1_tb/).
+at 190 ns: Note: @18: 129 81h sum 1875 (/p4ej1_tb/).
+at 200 ns: Note: @19: 161 A1h sum 2036 (/p4ej1_tb/).
+at 210 ns: Note: @20: 193 C1h sum 2229 (/p4ej1_tb/).
+at 220 ns: Note: @21: 193 C1h sum 2422 (/p4ej1_tb/).
+at 230 ns: Note: @22: 193 C1h sum 2615 (/p4ej1_tb/).
+at 240 ns: Note: @23: 193 C1h sum 2808 (/p4ej1_tb/).
+at 250 ns: Note: @24: 225 E1h sum 3033 (/p4ej1_tb/).
+at 260 ns: Note: @25: 225 E1h sum 3258 (/p4ej1_tb/).
+at 270 ns: Note: @26: 225 E1h sum 3483 (/p4ej1_tb/).
+at 280 ns: Note: @27: 225 E1h sum 3708 (/p4ej1_tb/).
+at 290 ns: Note: @28: 2 02h sum 3710 (/p4ej1_tb/).
+at 300 ns: Note: @29: 2 02h sum 3712 (/p4ej1_tb/).
+at 310 ns: Note: @30: 2 02h sum 3714 (/p4ej1_tb/).
+at 320 ns: Note: @31: 2 02h sum 3716 (/p4ej1_tb/).
+at 320 ns: Note: sum 3716 (0E84h)  lsb 84h checksum 7Ch (/p4ej1_tb/).
+at 320 ns: Note: ARCHIVO .HEX GENERADO (/p4ej1_tb/).
+at 320 ns: Note: INICIO DE VERIFICACIÓN (/p4ej1_tb/).
+# restart
+# run 100ns
+Simulator is doing circuit initialization process.
+at 0 ps: Note: VOLCADO DE UNIDAD DE CONTROL EN .HEX... (/p4ej1_tb/).
+Finished circuit initialization process.
+at 10 ns: Note: @0: 12 0Ch sum 28 (/p4ej1_tb/).
+at 20 ns: Note: @1: 12 0Ch sum 40 (/p4ej1_tb/).
+at 30 ns: Note: @2: 44 2Ch sum 84 (/p4ej1_tb/).
+at 40 ns: Note: @3: 44 2Ch sum 128 (/p4ej1_tb/).
+at 50 ns: Note: @4: 76 4Ch sum 204 (/p4ej1_tb/).
+at 60 ns: Note: @5: 76 4Ch sum 280 (/p4ej1_tb/).
+at 70 ns: Note: @6: 76 4Ch sum 356 (/p4ej1_tb/).
+at 80 ns: Note: @7: 76 4Ch sum 432 (/p4ej1_tb/).
+at 90 ns: Note: @8: 108 6Ch sum 540 (/p4ej1_tb/).
+at 100 ns: Note: @9: 108 6Ch sum 648 (/p4ej1_tb/).
+# run all
+at 110 ns: Note: @10: 108 6Ch sum 756 (/p4ej1_tb/).
+at 120 ns: Note: @11: 108 6Ch sum 864 (/p4ej1_tb/).
+at 130 ns: Note: @12: 148 94h sum 1012 (/p4ej1_tb/).
+at 140 ns: Note: @13: 148 94h sum 1160 (/p4ej1_tb/).
+at 150 ns: Note: @14: 148 94h sum 1308 (/p4ej1_tb/).
+at 160 ns: Note: @15: 148 94h sum 1456 (/p4ej1_tb/).
+at 170 ns: Note: @16: 129 81h sum 1585 (/p4ej1_tb/).
+at 180 ns: Note: @17: 161 A1h sum 1746 (/p4ej1_tb/).
+at 190 ns: Note: @18: 129 81h sum 1875 (/p4ej1_tb/).
+at 200 ns: Note: @19: 161 A1h sum 2036 (/p4ej1_tb/).
+at 210 ns: Note: @20: 193 C1h sum 2229 (/p4ej1_tb/).
+at 220 ns: Note: @21: 193 C1h sum 2422 (/p4ej1_tb/).
+at 230 ns: Note: @22: 193 C1h sum 2615 (/p4ej1_tb/).
+at 240 ns: Note: @23: 193 C1h sum 2808 (/p4ej1_tb/).
+at 250 ns: Note: @24: 225 E1h sum 3033 (/p4ej1_tb/).
+at 260 ns: Note: @25: 225 E1h sum 3258 (/p4ej1_tb/).
+at 270 ns: Note: @26: 225 E1h sum 3483 (/p4ej1_tb/).
+at 280 ns: Note: @27: 225 E1h sum 3708 (/p4ej1_tb/).
+at 290 ns: Note: @28: 2 02h sum 3710 (/p4ej1_tb/).
+at 300 ns: Note: @29: 2 02h sum 3712 (/p4ej1_tb/).
+at 310 ns: Note: @30: 2 02h sum 3714 (/p4ej1_tb/).
+at 320 ns: Note: @31: 2 02h sum 3716 (/p4ej1_tb/).
+at 320 ns: Note: sum 3716 (0E84h)  lsb 84h checksum 7Ch (/p4ej1_tb/).
+at 320 ns: Note: ARCHIVO .HEX GENERADO (/p4ej1_tb/).
+at 320 ns: Note: INICIO DE VERIFICACIÓN (/p4ej1_tb/).
+at 3140 ns: Note: FIN DE VERIFICACIÓN (/p4ej1_tb/).
+Stopped at time : 6121028510 ns : File "C:/Users/eduar/OneDrive/Escritorio/UAM/PF/p4ej1_tb.vhd" Line 241

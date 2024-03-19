@@ -1,0 +1,64 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : c0a.vf
+// /___/   /\     Timestamp : 09/25/2021 13:27:42
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica0/c0a.vf -w C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica0/c0a.sch
+//Design Name: c0a
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module c0a(A, 
+           B, 
+           C, 
+           D, 
+           Z);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output Z;
+   
+   wire XLXN_1;
+   wire XLXN_2;
+   wire XLXN_3;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   
+   AND2  XLXI_1 (.I0(XLXN_6), 
+                .I1(XLXN_5), 
+                .O(XLXN_1));
+   AND3  XLXI_2 (.I0(A), 
+                .I1(C), 
+                .I2(XLXN_6), 
+                .O(XLXN_2));
+   AND4  XLXI_3 (.I0(XLXN_7), 
+                .I1(B), 
+                .I2(C), 
+                .I3(D), 
+                .O(XLXN_3));
+   OR3  XLXI_4 (.I0(XLXN_3), 
+               .I1(XLXN_2), 
+               .I2(XLXN_1), 
+               .O(Z));
+   INV  XLXI_5 (.I(B), 
+               .O(XLXN_5));
+   INV  XLXI_6 (.I(D), 
+               .O(XLXN_6));
+   INV  XLXI_7 (.I(A), 
+               .O(XLXN_7));
+endmodule

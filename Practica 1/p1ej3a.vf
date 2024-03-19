@@ -1,0 +1,47 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : p1ej3a.vf
+// /___/   /\     Timestamp : 09/25/2021 13:08:27
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog "C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica 1/p1ej3a.vf" -w "C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica 1/p1ej3a.sch"
+//Design Name: p1ej3a
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module p1ej3a(A, 
+              B, 
+              C, 
+              Z);
+
+    input A;
+    input B;
+    input C;
+   output Z;
+   
+   wire XLXN_10;
+   wire XLXN_13;
+   wire XLXN_14;
+   
+   AND2  XLXI_6 (.I0(C), 
+                .I1(XLXN_10), 
+                .O(XLXN_14));
+   INV  XLXI_7 (.I(B), 
+               .O(XLXN_13));
+   INV  XLXI_8 (.I(A), 
+               .O(XLXN_10));
+   OR2  XLXI_9 (.I0(XLXN_13), 
+               .I1(XLXN_14), 
+               .O(Z));
+endmodule

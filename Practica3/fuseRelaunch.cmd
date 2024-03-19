@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica3/p3ej2_tb_isim_beh.exe" -prj "C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica3/p3ej2_tb_beh.prj" "work.p3ej2_tb" "work.glbl" 

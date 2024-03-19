@@ -1,0 +1,72 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : p3ej1.vf
+// /___/   /\     Timestamp : 11/16/2021 20:15:50
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica3/p3ej1.vf -w C:/Users/eduar/OneDrive/Escritorio/UAM/PF/Practica3/p3ej1.sch
+//Design Name: p3ej1
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module p3ej1(CLK, 
+             CLR, 
+             Q0, 
+             Q1, 
+             Q2, 
+             Q3);
+
+    input CLK;
+    input CLR;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   wire XLXN_5;
+   wire XLXN_20;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire Q2_DUMMY;
+   wire Q3_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign Q2 = Q2_DUMMY;
+   assign Q3 = Q3_DUMMY;
+   FDC #( .INIT(1'b0) ) XLXI_1 (.C(CLK), 
+               .CLR(XLXN_5), 
+               .D(Q3_DUMMY), 
+               .Q(Q0_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_2 (.C(CLK), 
+               .CLR(XLXN_5), 
+               .D(Q0_DUMMY), 
+               .Q(Q1_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_3 (.C(CLK), 
+               .CLR(XLXN_5), 
+               .D(Q1_DUMMY), 
+               .Q(Q2_DUMMY));
+   FDC #( .INIT(1'b0) ) XLXI_4 (.C(CLK), 
+               .CLR(XLXN_5), 
+               .D(Q2_DUMMY), 
+               .Q(Q3_DUMMY));
+   INV  XLXI_5 (.I(Q3_DUMMY), 
+               .O(Q3_DUMMY));
+   AND2B1  XLXI_7 (.I0(Q0_DUMMY), 
+                  .I1(Q3_DUMMY), 
+                  .O(XLXN_20));
+   OR2  XLXI_8 (.I0(CLR), 
+               .I1(XLXN_20), 
+               .O(XLXN_5));
+endmodule

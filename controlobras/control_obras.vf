@@ -1,0 +1,122 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : control_obras.vf
+// /___/   /\     Timestamp : 12/01/2021 12:26:22
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/eduar/OneDrive/Escritorio/UAM/PF/controlobras/control_obras.vf -w C:/Users/eduar/OneDrive/Escritorio/UAM/PF/controlobras/control_obras.sch
+//Design Name: control_obras
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module control_obras(Q0, 
+                     Q1, 
+                     Q2, 
+                     S0, 
+                     S1, 
+                     AD, 
+                     AI, 
+                     D0, 
+                     D1, 
+                     D2, 
+                     RD, 
+                     RI, 
+                     VD, 
+                     VI);
+
+    input Q0;
+    input Q1;
+    input Q2;
+    input S0;
+    input S1;
+   output AD;
+   output AI;
+   output D0;
+   output D1;
+   output D2;
+   output RD;
+   output RI;
+   output VD;
+   output VI;
+   
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_7;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_33;
+   wire XLXN_34;
+   wire XLXN_35;
+   wire RI_DUMMY;
+   
+   assign RI = RI_DUMMY;
+   AND2  XLXI_1 (.I0(XLXN_5), 
+                .I1(Q2), 
+                .O(XLXN_13));
+   INV  XLXI_2 (.I(Q0), 
+               .O(XLXN_5));
+   INV  XLXI_3 (.I(Q1), 
+               .O(XLXN_4));
+   INV  XLXI_4 (.I(Q2), 
+               .O(RI_DUMMY));
+   AND3  XLXI_5 (.I0(Q0), 
+                .I1(Q1), 
+                .I2(Q2), 
+                .O(AI));
+   AND3  XLXI_6 (.I0(Q0), 
+                .I1(Q1), 
+                .I2(RI_DUMMY), 
+                .O(AD));
+   OR2  XLXI_7 (.I0(XLXN_5), 
+               .I1(XLXN_4), 
+               .O(XLXN_7));
+   AND2  XLXI_8 (.I0(XLXN_7), 
+                .I1(RI_DUMMY), 
+                .O(VD));
+   AND2  XLXI_9 (.I0(XLXN_7), 
+                .I1(Q2), 
+                .O(VI));
+   XOR2  XLXI_10 (.I0(Q0), 
+                 .I1(Q1), 
+                 .O(D1));
+   AND2  XLXI_11 (.I0(Q1), 
+                 .I1(XLXN_5), 
+                 .O(XLXN_33));
+   AND3  XLXI_12 (.I0(RI_DUMMY), 
+                 .I1(XLXN_5), 
+                 .I2(S1), 
+                 .O(XLXN_34));
+   AND3  XLXI_13 (.I0(Q2), 
+                 .I1(XLXN_5), 
+                 .I2(S0), 
+                 .O(XLXN_35));
+   AND3  XLXI_15 (.I0(Q0), 
+                 .I1(Q1), 
+                 .I2(RI_DUMMY), 
+                 .O(XLXN_12));
+   AND2  XLXI_17 (.I0(XLXN_4), 
+                 .I1(Q2), 
+                 .O(XLXN_14));
+   OR3  XLXI_19 (.I0(XLXN_33), 
+                .I1(XLXN_34), 
+                .I2(XLXN_35), 
+                .O(D0));
+   OR3  XLXI_20 (.I0(XLXN_14), 
+                .I1(XLXN_13), 
+                .I2(XLXN_12), 
+                .O(D2));
+   BUF  XLXI_58 (.I(Q2), 
+                .O(RD));
+endmodule

@@ -1,0 +1,67 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : p1ej1a.vf
+// /___/   /\     Timestamp : 09/23/2021 22:53:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3 -verilog C:/Users/eduar/Desktop/UAM/PF/Practica1/p1ej1a.vf -w C:/Users/eduar/Desktop/UAM/PF/Practica1/p1ej1a.sch
+//Design Name: p1ej1a
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module p1ej1a(A, 
+              B, 
+              C, 
+              D, 
+              Z);
+
+    input A;
+    input B;
+    input C;
+    input D;
+   output Z;
+   
+   wire XLXN_4;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_13;
+   wire XLXN_14;
+   wire XLXN_15;
+   
+   AND3  XLXI_1 (.I0(C), 
+                .I1(B), 
+                .I2(A), 
+                .O(XLXN_13));
+   AND3  XLXI_2 (.I0(XLXN_10), 
+                .I1(XLXN_9), 
+                .I2(XLXN_4), 
+                .O(XLXN_14));
+   AND3  XLXI_3 (.I0(XLXN_12), 
+                .I1(XLXN_9), 
+                .I2(C), 
+                .O(XLXN_15));
+   OR3  XLXI_4 (.I0(XLXN_15), 
+               .I1(XLXN_14), 
+               .I2(XLXN_13), 
+               .O(Z));
+   INV  XLXI_5 (.I(D), 
+               .O(XLXN_4));
+   INV  XLXI_6 (.I(B), 
+               .O(XLXN_9));
+   INV  XLXI_7 (.I(C), 
+               .O(XLXN_10));
+   INV  XLXI_8 (.I(A), 
+               .O(XLXN_12));
+endmodule
